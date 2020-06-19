@@ -31,6 +31,8 @@ var convert = function(s, numRows) {
     var lettersPerZig = (numRows * 2) - 2;
     var oneZig = [];
     for (var i = 0; i < length; i++) {
-        
+        for (var j = 0; j+i < length; j+=lettersPerZig) {
+            
+        }
     }
 }
