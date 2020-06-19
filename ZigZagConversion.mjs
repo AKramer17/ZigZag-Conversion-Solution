@@ -22,3 +22,15 @@ P     I    N
 A   L S  I G
 Y A   H R
 P     I */
+
+var convert = function(s, numRows) {
+    var length = s.length;
+    if (numRows == 1) {
+        return s;
+    }
+    var lettersPerZig = (numRows * 2) - 2;
+    var oneZig = [];
+    for (var i = 0; i < length; i++) {
+        
+    }
+}
