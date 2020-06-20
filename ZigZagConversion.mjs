@@ -30,7 +30,7 @@ var convert = function(s, numRows) {
     if (numRows == 1) {
         return s;
     }
-    for (var i = 0; i < length; i++) {
+    for (var i = 0; i < numRows; i++) {
         for (var j = 0; j+i < length; j+=lettersPerZig) {
             oneZig.push(s.charAt(j + i));
             if (i != 0 && i+1 != numRows && (j-i+lettersPerZig) < length) {
