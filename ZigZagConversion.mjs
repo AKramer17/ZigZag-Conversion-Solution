@@ -32,7 +32,10 @@ var convert = function(s, numRows) {
     var oneZig = [];
     for (var i = 0; i < length; i++) {
         for (var j = 0; j+i < length; j+=lettersPerZig) {
-            
+            oneZig.push(s.charAt(j + i));
+            if (i != 0 && i+1 != numRows && (j-i+lettersPerZig) < length) {
+                oneZig.push(s.charAt(j-i+lettersPerZig))
+            }
         }
     }
 }
