@@ -38,4 +38,5 @@ var convert = function(s, numRows) {
             }
         }
     }
+    return oneZig.join("");
 }
