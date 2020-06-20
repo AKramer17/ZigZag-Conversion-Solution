@@ -25,11 +25,11 @@ P     I */
 
 var convert = function(s, numRows) {
     var length = s.length;
+    var lettersPerZig = (numRows * 2) - 2;
+    var oneZig = [];
     if (numRows == 1) {
         return s;
     }
-    var lettersPerZig = (numRows * 2) - 2;
-    var oneZig = [];
     for (var i = 0; i < length; i++) {
         for (var j = 0; j+i < length; j+=lettersPerZig) {
             oneZig.push(s.charAt(j + i));
